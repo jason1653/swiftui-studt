@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        // 네비게이션 바의 배경색과 틴트 색상 설정
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .red
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+    }
+    
+
     @State private var isShowingModal = false
     
     
     var body: some View {
         NavigationView {
+            
             VStack {
                 Text("Hello, SwiftUI")
                     .font(.largeTitle)
@@ -48,12 +60,13 @@ struct ContentView: View {
                     .padding(10)
                     .cornerRadius(10)
                     
-                
+                    
                     
                     
             }
         }
         .navigationTitle("Home")
+        .navigationBarColor(backgroundColor: .black, titleColor: .white)
     }
 }
 

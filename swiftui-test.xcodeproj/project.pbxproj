@@ -18,6 +18,8 @@
 		96D556312A31BD1900E2B891 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556302A31BD1900E2B891 /* ModalView.swift */; };
 		96D556332A31BE2500E2B891 /* NavigationView2Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556322A31BE2500E2B891 /* NavigationView2Test.swift */; };
 		96D556352A31BEA900E2B891 /* NavigationBackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556342A31BEA900E2B891 /* NavigationBackItem.swift */; };
+		96D556372A31C20000E2B891 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556362A31C20000E2B891 /* NavigationBarModifier.swift */; };
+		96D5563A2A31C22500E2B891 /* View+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556392A31C22500E2B891 /* View+Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		96D556302A31BD1900E2B891 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		96D556322A31BE2500E2B891 /* NavigationView2Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView2Test.swift; sourceTree = "<group>"; };
 		96D556342A31BEA900E2B891 /* NavigationBackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackItem.swift; sourceTree = "<group>"; };
+		96D556362A31C20000E2B891 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		96D556392A31C22500E2B891 /* View+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extenstion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		96D556032A31B9EB00E2B891 /* swiftui-test */ = {
 			isa = PBXGroup;
 			children = (
+				96D556382A31C21400E2B891 /* extenstion */,
 				96D556042A31B9EB00E2B891 /* swiftui_testApp.swift */,
 				96D556062A31B9EB00E2B891 /* ContentView.swift */,
 				96D556082A31B9EC00E2B891 /* Assets.xcassets */,
@@ -110,6 +115,7 @@
 				96D556302A31BD1900E2B891 /* ModalView.swift */,
 				96D556322A31BE2500E2B891 /* NavigationView2Test.swift */,
 				96D556342A31BEA900E2B891 /* NavigationBackItem.swift */,
+				96D556362A31C20000E2B891 /* NavigationBarModifier.swift */,
 			);
 			path = "swiftui-test";
 			sourceTree = "<group>";
@@ -137,6 +143,14 @@
 				96D556212A31B9EC00E2B891 /* swiftui_testUITestsLaunchTests.swift */,
 			);
 			path = "swiftui-testUITests";
+			sourceTree = "<group>";
+		};
+		96D556382A31C21400E2B891 /* extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				96D556392A31C22500E2B891 /* View+Extenstion.swift */,
+			);
+			path = extenstion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,11 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D556332A31BE2500E2B891 /* NavigationView2Test.swift in Sources */,
+				96D556372A31C20000E2B891 /* NavigationBarModifier.swift in Sources */,
 				96D556072A31B9EB00E2B891 /* ContentView.swift in Sources */,
 				96D5562F2A31BB8700E2B891 /* NavigationViewTest.swift in Sources */,
 				96D556352A31BEA900E2B891 /* NavigationBackItem.swift in Sources */,
 				96D556312A31BD1900E2B891 /* ModalView.swift in Sources */,
 				96D556052A31B9EB00E2B891 /* swiftui_testApp.swift in Sources */,
+				96D5563A2A31C22500E2B891 /* View+Extenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
