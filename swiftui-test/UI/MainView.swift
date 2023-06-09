@@ -1,14 +1,13 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  swiftui-test
 //
-//  Created by jason on 2023/06/08.
+//  Created by jason on 2023/06/09.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct MainView: View {
     init() {
         // 네비게이션 바의 배경색과 틴트 색상 설정
         let appearance = UINavigationBarAppearance()
@@ -70,9 +69,8 @@ struct ContentView: View {
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Preview(source: MainView())
     }
 }
