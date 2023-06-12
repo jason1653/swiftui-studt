@@ -45,6 +45,14 @@ struct MainView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                NavigationLink(destination: TabMenu()) {
+                    Text("탭메뉴")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
                 Button("테스트", action: {
                     isShowingModal = true
                 })

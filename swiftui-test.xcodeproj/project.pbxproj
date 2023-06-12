@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963FE2CD2A369F01007617CA /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FE2CC2A369F01007617CA /* TabMenu.swift */; };
+		963FE2D22A36E3D9007617CA /* Tab01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FE2D12A36E3D9007617CA /* Tab01.swift */; };
+		963FE2D42A36E479007617CA /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FE2D32A36E479007617CA /* Symbol.swift */; };
 		968CBEC22A32B33B003DADEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CBEC12A32B33B003DADEA /* AppDelegate.swift */; };
 		968CBEC42A32B346003DADEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CBEC32A32B346003DADEA /* SceneDelegate.swift */; };
 		968CBF082A32C476003DADEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CBF072A32C476003DADEA /* MainView.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963FE2CC2A369F01007617CA /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
+		963FE2D12A36E3D9007617CA /* Tab01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab01.swift; sourceTree = "<group>"; };
+		963FE2D32A36E479007617CA /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		968CBEC12A32B33B003DADEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968CBEC32A32B346003DADEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		968CBF072A32C476003DADEA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -87,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		963FE2D02A36E3CC007617CA /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				963FE2D12A36E3D9007617CA /* Tab01.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
 		968CBEC02A32B301003DADEA /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +127,9 @@
 		968CBF062A32C3F4003DADEA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				963FE2D02A36E3CC007617CA /* Tab */,
 				968CBF072A32C476003DADEA /* MainView.swift */,
+				963FE2CC2A369F01007617CA /* TabMenu.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -122,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				968CBF0A2A32C535003DADEA /* Preview.swift */,
+				963FE2D32A36E479007617CA /* Symbol.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -334,11 +351,14 @@
 				968CBF0B2A32C535003DADEA /* Preview.swift in Sources */,
 				96D556372A31C20000E2B891 /* NavigationBarModifier.swift in Sources */,
 				968CBEC22A32B33B003DADEA /* AppDelegate.swift in Sources */,
+				963FE2D42A36E479007617CA /* Symbol.swift in Sources */,
 				96D5562F2A31BB8700E2B891 /* NavigationViewTest.swift in Sources */,
+				963FE2D22A36E3D9007617CA /* Tab01.swift in Sources */,
 				968CBEC42A32B346003DADEA /* SceneDelegate.swift in Sources */,
 				96D556352A31BEA900E2B891 /* NavigationBackItem.swift in Sources */,
 				96D556312A31BD1900E2B891 /* ModalView.swift in Sources */,
 				96D5563A2A31C22500E2B891 /* View+Extenstion.swift in Sources */,
+				963FE2CD2A369F01007617CA /* TabMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
