@@ -11,6 +11,7 @@ struct Tab01: View {
     var body: some View {
         VStack(spacing: 0, content: {
             favoriteProducts
+            darkerDivider
         })
     }
 }
@@ -20,6 +21,12 @@ private extension Tab01 {
         FavoriteProductScrollView()
             .padding(.top, 24)
             .padding(.bottom, 8)
+    }
+    
+    var darkerDivider: some View {
+        Color.primary
+            .opacity(0.3)
+            .frame(maxWidth: .infinity, maxHeight: 1)
     }
 }
 
