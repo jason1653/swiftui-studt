@@ -9,7 +9,17 @@ import SwiftUI
 
 struct Tab01: View {
     var body: some View {
-        Text("첫번쨰 메뉴")
+        VStack(spacing: 0, content: {
+            favoriteProducts
+        })
+    }
+}
+
+private extension Tab01 {
+    var favoriteProducts: some View {
+        FavoriteProductScrollView()
+            .padding(.top, 24)
+            .padding(.bottom, 8)
     }
 }
 
