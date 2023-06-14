@@ -12,7 +12,9 @@ struct Tab01: View {
         VStack(spacing: 0, content: {
             favoriteProducts
             darkerDivider
+            Spacer()
         })
+        
     }
 }
 

@@ -27,6 +27,10 @@
 		96D556352A31BEA900E2B891 /* NavigationBackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556342A31BEA900E2B891 /* NavigationBackItem.swift */; };
 		96D556372A31C20000E2B891 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556362A31C20000E2B891 /* NavigationBarModifier.swift */; };
 		96D5563A2A31C22500E2B891 /* View+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556392A31C22500E2B891 /* View+Extenstion.swift */; };
+		96E8F31A2A393E2500EE4647 /* Tab02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8F3192A393E2500EE4647 /* Tab02.swift */; };
+		96E8F31D2A393FB700EE4647 /* MVIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8F31C2A393FB700EE4647 /* MVIContainer.swift */; };
+		96E8F3202A3940C900EE4647 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8F31F2A3940C900EE4647 /* RouterProtocol.swift */; };
+		96E8F3222A39413900EE4647 /* RouterScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8F3212A39413900EE4647 /* RouterScreenProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		96D556342A31BEA900E2B891 /* NavigationBackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackItem.swift; sourceTree = "<group>"; };
 		96D556362A31C20000E2B891 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		96D556392A31C22500E2B891 /* View+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extenstion.swift"; sourceTree = "<group>"; };
+		96E8F3192A393E2500EE4647 /* Tab02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab02.swift; sourceTree = "<group>"; };
+		96E8F31C2A393FB700EE4647 /* MVIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIContainer.swift; sourceTree = "<group>"; };
+		96E8F31F2A3940C900EE4647 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		96E8F3212A39413900EE4647 /* RouterScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterScreenProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 			children = (
 				963FE2D12A36E3D9007617CA /* Tab01.swift */,
 				964EA2132A37F03500AFB92B /* FavoriteProductScrollView.swift */,
+				96E8F3192A393E2500EE4647 /* Tab02.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 		96D556032A31B9EB00E2B891 /* swiftui-test */ = {
 			isa = PBXGroup;
 			children = (
+				96E8F31B2A393FA300EE4647 /* Utilites */,
 				968CBF092A32C520003DADEA /* Helper */,
 				968CBF062A32C3F4003DADEA /* UI */,
 				968CBEC62A32B484003DADEA /* SupportingFiles */,
@@ -220,6 +230,24 @@
 				96D556392A31C22500E2B891 /* View+Extenstion.swift */,
 			);
 			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		96E8F31B2A393FA300EE4647 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				96E8F31E2A3940A900EE4647 /* Router */,
+				96E8F31C2A393FB700EE4647 /* MVIContainer.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		96E8F31E2A3940A900EE4647 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				96E8F31F2A3940C900EE4647 /* RouterProtocol.swift */,
+				96E8F3212A39413900EE4647 /* RouterScreenProtocol.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,9 +380,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E8F3202A3940C900EE4647 /* RouterProtocol.swift in Sources */,
 				96D556332A31BE2500E2B891 /* NavigationView2Test.swift in Sources */,
 				968CBF082A32C476003DADEA /* MainView.swift in Sources */,
 				968CBF0B2A32C535003DADEA /* Preview.swift in Sources */,
+				96E8F3222A39413900EE4647 /* RouterScreenProtocol.swift in Sources */,
 				96D556372A31C20000E2B891 /* NavigationBarModifier.swift in Sources */,
 				968CBEC22A32B33B003DADEA /* AppDelegate.swift in Sources */,
 				963FE2D42A36E479007617CA /* Symbol.swift in Sources */,
@@ -366,7 +396,9 @@
 				964EA2142A37F03500AFB92B /* FavoriteProductScrollView.swift in Sources */,
 				96D5563A2A31C22500E2B891 /* View+Extenstion.swift in Sources */,
 				963FE2CD2A369F01007617CA /* TabMenu.swift in Sources */,
+				96E8F31D2A393FB700EE4647 /* MVIContainer.swift in Sources */,
 				964EA2162A37F33D00AFB92B /* ResizeImage.swift in Sources */,
+				96E8F31A2A393E2500EE4647 /* Tab02.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

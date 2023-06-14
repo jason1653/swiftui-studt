@@ -10,7 +10,7 @@ import SwiftUI
 struct TabMenu: View {
     
     private enum Tabs {
-        case tab1, recipe, gallery, myPage
+        case tab1, tab2, gallery, myPage
     }
     
     @State private var selectedTab: Tabs = .tab1
@@ -19,12 +19,13 @@ struct TabMenu: View {
         TabView(selection: $selectedTab, content: {
             Group(content: {
                 tab1
+                tab2
             })
             .accentColor(.primary)
         })
         .accentColor(.red)
         .edgesIgnoringSafeArea(edges)
-        .statusBar(hidden: selectedTab == .recipe)
+        .statusBar(hidden: selectedTab == .tab2)
         
     }
 }
@@ -35,6 +36,12 @@ private extension TabMenu {
             .tag(Tabs.tab1)
             .tabItem(image: "house", text: "홈")
         
+    }
+    
+    var tab2: some View {
+        Tab02()
+            .tag(Tabs.tab2)
+            .tabItem(image: "house", text: "탭2")
     }
     
     var edges: Edge.Set {
