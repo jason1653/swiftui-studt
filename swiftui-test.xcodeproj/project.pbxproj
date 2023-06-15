@@ -16,6 +16,10 @@
 		968CBEC42A32B346003DADEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CBEC32A32B346003DADEA /* SceneDelegate.swift */; };
 		968CBF082A32C476003DADEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CBF072A32C476003DADEA /* MainView.swift */; };
 		968CBF0B2A32C535003DADEA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CBF0A2A32C535003DADEA /* Preview.swift */; };
+		96B243DD2A3AA23000394F7D /* RouterCloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B243DC2A3AA23000394F7D /* RouterCloseModifier.swift */; };
+		96B243DF2A3AA2F200394F7D /* RouterNavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B243DE2A3AA2F200394F7D /* RouterNavigationStackModifier.swift */; };
+		96B243E12A3AA50800394F7D /* RouterNavigationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B243E02A3AA50800394F7D /* RouterNavigationViewModifier.swift */; };
+		96B243E32A3AA6EF00394F7D /* RouterSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B243E22A3AA6EF00394F7D /* RouterSheetModifier.swift */; };
 		96D556092A31B9EC00E2B891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D556082A31B9EC00E2B891 /* Assets.xcassets */; };
 		96D5560C2A31B9EC00E2B891 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D5560B2A31B9EC00E2B891 /* Preview Assets.xcassets */; };
 		96D556162A31B9EC00E2B891 /* swiftui_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D556152A31B9EC00E2B891 /* swiftui_testTests.swift */; };
@@ -61,6 +65,10 @@
 		968CBEC32A32B346003DADEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		968CBF072A32C476003DADEA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		968CBF0A2A32C535003DADEA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		96B243DC2A3AA23000394F7D /* RouterCloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterCloseModifier.swift; sourceTree = "<group>"; };
+		96B243DE2A3AA2F200394F7D /* RouterNavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationStackModifier.swift; sourceTree = "<group>"; };
+		96B243E02A3AA50800394F7D /* RouterNavigationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationViewModifier.swift; sourceTree = "<group>"; };
+		96B243E22A3AA6EF00394F7D /* RouterSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSheetModifier.swift; sourceTree = "<group>"; };
 		96D556012A31B9EB00E2B891 /* swiftui-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D556082A31B9EC00E2B891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96D5560B2A31B9EC00E2B891 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -257,6 +265,10 @@
 			isa = PBXGroup;
 			children = (
 				96E8F3642A39ADAC00EE4647 /* RouterAlertModifier.swift */,
+				96B243DC2A3AA23000394F7D /* RouterCloseModifier.swift */,
+				96B243DE2A3AA2F200394F7D /* RouterNavigationStackModifier.swift */,
+				96B243E02A3AA50800394F7D /* RouterNavigationViewModifier.swift */,
+				96B243E22A3AA6EF00394F7D /* RouterSheetModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -393,7 +405,9 @@
 			files = (
 				96E8F3202A3940C900EE4647 /* RouterProtocol.swift in Sources */,
 				96D556332A31BE2500E2B891 /* NavigationView2Test.swift in Sources */,
+				96B243DF2A3AA2F200394F7D /* RouterNavigationStackModifier.swift in Sources */,
 				968CBF082A32C476003DADEA /* MainView.swift in Sources */,
+				96B243E12A3AA50800394F7D /* RouterNavigationViewModifier.swift in Sources */,
 				968CBF0B2A32C535003DADEA /* Preview.swift in Sources */,
 				96E8F3222A39413900EE4647 /* RouterScreenProtocol.swift in Sources */,
 				96D556372A31C20000E2B891 /* NavigationBarModifier.swift in Sources */,
@@ -402,7 +416,9 @@
 				96D5562F2A31BB8700E2B891 /* NavigationViewTest.swift in Sources */,
 				963FE2D22A36E3D9007617CA /* Tab01.swift in Sources */,
 				968CBEC42A32B346003DADEA /* SceneDelegate.swift in Sources */,
+				96B243E32A3AA6EF00394F7D /* RouterSheetModifier.swift in Sources */,
 				96D556352A31BEA900E2B891 /* NavigationBackItem.swift in Sources */,
+				96B243DD2A3AA23000394F7D /* RouterCloseModifier.swift in Sources */,
 				96D556312A31BD1900E2B891 /* ModalView.swift in Sources */,
 				964EA2142A37F03500AFB92B /* FavoriteProductScrollView.swift in Sources */,
 				96D5563A2A31C22500E2B891 /* View+Extenstion.swift in Sources */,
